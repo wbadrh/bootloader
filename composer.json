@@ -1,0 +1,17 @@
+{
+    "name": "wbadrh/bootloader",
+    "type": "library",
+    "description": "PSR-4/PSR-11 Service Loader.",
+    "keywords": ["container", "boot", "loader", "services", "autoload", "lazy load", "psr-4", "psr-11", "dependency", "injection", "injector", "namespace", "php", "psr", "oop", "composer"],
+    "homepage": "https://github.com/wbadrh/bootloader",
+    "license": "MIT",
+    "require": {
+        "psr/container": "^1.0",
+        "league/container": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "wbadrh\\Boot\\": "src/"
+        }
+    }
+}
