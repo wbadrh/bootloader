@@ -20,6 +20,10 @@ class Loader implements ContainerInterface
 	// Cached objects
 	private $_loaded = [];
 
+	// Lazy loaded with initialize()
+	// Used as a replacement for the constructor
+	public $lazy = [];
+
 	/**
 	 * Service loader
 	 *
