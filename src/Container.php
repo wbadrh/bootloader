@@ -34,7 +34,7 @@ class Container
             // Fetch object
             $object = $this->loader->get($namespace);
             // Constructor replacement
-            $object->initialize();
+            method_exists($object, 'initialize') && $object->initialize();
 
             // Save lazyloaded in parent class
             $this->loader->lazy[] = $namespace;
